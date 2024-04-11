@@ -1,0 +1,173 @@
+.sidebar {
+    background-color: #000;
+    color: #fff;
+    height: auto;
+}
+.sidebar-heading {
+    padding: 10px;
+}
+.nav-link {
+    color: #fff;
+}
+.nav-link:hover {
+    color: #ccc;
+}
+.sidebar .nav-item:not(:last-child) {
+    margin-bottom: 10px;
+}
+.sidebar .nav-divider {
+    border-top: 1px solid #ccc;
+    margin: 10px 0;
+}
+.user-profile {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+  /* .user-profile .user-avatar {
+    width: 40px;
+    height: 40px;
+    background-color: #ccc;
+    border-radius: 50%;
+    overflow: hidden;
+  } */
+
+  /* New user icon */
+.user-profile img.profile-image {
+    width: 40px; /* Adjust image width */
+    height: 40px; /* Adjust image height */
+}
+
+  /* .user-profile .user-avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  } */
+  /* .user-name {
+    position: absolute;
+    top: 17px;
+    right: 60px;
+  } */
+.overview {
+    position: absolute;
+    top: 17px;
+    right: 1250px;
+    font-size: 20px;
+}
+.card-subtitle {
+    font-size: 40px; /* Increase subtitle size */
+}
+.card-title {
+    color: rgb(180, 178, 178);
+    font-size: 12px;
+    /* padding: 20px; */
+    margin-top: 20px;
+}
+
+  /* Row gap */
+.row-gap {
+    margin-bottom: 20px;
+}
+
+  /* Add rounded corners to all boxes */
+.box, .side-box, .main-container, .half-container {
+    background-color: white; /* Change to white */
+    border: 1px solid #ccc;
+    /* padding: 10px; */
+    border-radius: 10px; /* Rounded corners */
+}
+
+/* .side-box {
+    height: 80px;
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+} */
+
+.side-box div {
+    /* Added styles */
+    text-align: center;
+    width: 100%;
+}
+
+/* .subtitle-wrapper {
+text-align: center; 
+} */
+
+  /* Adjust spacing */
+.main-container {
+    margin-right: 0; /* Remove margin */
+}
+
+.hide-text {
+    visibility: hidden; /* Hide the "Hide text" while keeping its space */
+}
+  
+.custom-control-input:checked ~ .custom-control-label::before {
+    background-color: #007bff;
+    border-color: #007bff;
+    border-radius: 50%;   
+}
+
+.custom-control-label::before {
+    background-color: white;
+    border-color: #bababa;
+    border-radius: 50%; 
+}
+
+.custom-checkbox input[type="checkbox"]:checked + .checkmark:after {
+    content: "\002B"; 
+    position: absolute;
+    display: block;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 14px; 
+}
+
+.view-all-blue {
+color: rgb(74, 74, 244);
+}
+
+.box {
+    background-color: white; /* Change to white */
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 10px; /* Rounded corners */
+}
+
+  /* Adjust height of the five boxes container */
+.flex-container {
+    height: auto; 
+}
+  
+  /* Five Boxes */
+.side-box {
+    /* height: 100%;  */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+.subtitle-wrapper {
+    /* height: 100%;  */
+    text-align: center;
+    font-size: 20px; 
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+  
+.subtitle {
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;  */
+    /* display: inline-block;  */
+    vertical-align: middle;
+}
+
+
+.subtitle span {
+    position: relative;
+}
+  

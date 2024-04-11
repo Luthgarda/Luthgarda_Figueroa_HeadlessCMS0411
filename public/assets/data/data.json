@@ -1,0 +1,17 @@
+{
+    "unresolved":"2560",
+    "overdue": "345",
+    "open": "543",
+    "hold": "339",
+
+    "resolved": "3000",
+    "received":"543",
+    "avgFirstResp":"22m",
+    "resWithSLA":"94%",
+
+    "waitingOnFeatReq": "6538",
+    "awaitingCustResp": "8005",
+    "awaitingDevfix": "744",
+    "pending": "121"
+
+}

@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Overview Website</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <!-- <style>
+    /* Add custom styles here */
+    .sidebar {
+      background-color: #000;
+      color: #fff;
+      height: auto;
+    }
+    .sidebar-heading {
+      padding: 10px;
+    }
+    .nav-link {
+      color: #fff;
+    }
+    .nav-link:hover {
+      color: #ccc;
+    }
+    .sidebar .nav-item:not(:last-child) {
+      margin-bottom: 10px;
+    }
+    .sidebar .nav-divider {
+      border-top: 1px solid #ccc;
+      margin: 10px 0;
+    }
+    .user-profile {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+    }
+    .user-profile .user-avatar {
+      width: 40px;
+      height: 40px;
+      background-color: #ccc;
+      border-radius: 50%;
+      overflow: hidden;
+    }
+    .user-profile .user-avatar img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .user-name {
+      position: absolute;
+      top: 17px;
+      right: 60px;
+    }
+    .overview {
+      position: absolute;
+      top: 17px;
+      right: 1250px;
+      font-size: 20px;
+    }
+    .card-subtitle {
+      font-size: 60px; /* Increase subtitle size */
+    }
+    .card-title {
+      color: rgb(180, 178, 178);
+      font-size: 15px;
+    }
+
+    /* Row gap */
+    .row-gap {
+      margin-bottom: 20px;
+    }
+
+    /* Add rounded corners to all boxes */
+    .box, .side-box, .main-container, .half-container {
+      background-color: white; /* Change to white */
+      border: 1px solid #ccc;
+      /* padding: 10px; */
+      border-radius: 10px; /* Rounded corners */
+    }
+    .side-box {
+      height: 80px;
+      display: flex;
+      align-items: center; /* Center vertically */
+      justify-content: center; /* Center horizontally */
+    }
+
+    .side-box div {
+      /* Added styles */
+      text-align: center;
+      width: 100%;
+    }
+
+    .subtitle-wrapper {
+  text-align: center; /* Center text horizontally */
+}
+
+    /* Adjust spacing */
+    .main-container {
+      margin-right: 0; /* Remove margin */
+    }
+
+    .subtitle {
+    font-size: 25px; /* Adjust size as needed */
+    font-family: Arial, sans-serif; /* Adjust font family as needed */
+    color: #333; /* Adjust color as needed */
+    font-weight: bold;
+    }
+
+    .hide-text {
+      visibility: hidden; /* Hide the "Hide text" while keeping its space */
+    }
+    
+    .custom-control-input:checked ~ .custom-control-label::before {
+      background-color: #007bff;
+      border-color: #007bff;
+      border-radius: 50%; /* Makes it round */
+    }
+    .custom-control-input:checked ~ .custom-control-label::after {
+      color: #fff;
+      content: "\2713"; /* Unicode checkmark character */
+    }
+    .custom-control-label::before {
+      border-radius: 50%; /* Create a circular shape */
+    }
+
+    .custom-checkbox input[type="checkbox"]:checked + .checkmark:after {
+      content: "\002B"; /* Plus sign HTML entity */
+      position: absolute;
+      display: block;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 14px; /* Adjust size as needed */
+    }
+
+    .view-all-blue {
+  color: rgb(74, 74, 244);
+}
+
+    
+  </style> -->
+</head>
+
+<body>
+
+
+  <!-- Side bar -->
+
+  <div class="container-fluid">
+    <div class="row">
+      <nav class="col-md-2 d-none d-md-block bg-dark sidebar">
+        <div class="sidebar-sticky">
+          <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-light">
+
+          </h6>
+          <ul class="nav flex-column">
+            <li class="nav-item">
+              <a class="nav-link" href="#"><i class="fas fa-globe mr-2"></i>Overview</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><i class="fas fa-ticket-alt mr-2"></i>Tickets</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><i class="fas fa-video mr-2"></i>Videos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><i class="fas fa-address-book mr-2"></i>Contacts</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><i class="fas fa-user-tie mr-2"></i>Agents</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><i class="fas fa-newspaper mr-2"></i>Articles</a>
+            </li>
+            <li class="nav-divider"></li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><i class="fas fa-cogs mr-2"></i>Settings</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><i class="fas fa-newspaper mr-2"></i>Subscription</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+
+      <main role="main" class="col-md-10 ml-sm-auto col-lg-10 px-4">
+
+        <!-- NEW USER -->
+
+
+        <div class="content flex-grow-1 p-3">
+          <div class="d-flex justify-content-between align-items-center mb-3">
+            <h4>Overview</h4>
+            <div class="user-profile">
+              Keith Lun <img src="assets/images/aboutmeimagekeith2.jpg" alt="User Icon" class="profile-image">
+            </div>
+          </div>
+        </div>
+
+
+        <!-- Your content goes here -->
+        <header class="jumbotron jumbotron-fluid text-center bg-light">
+          <div class="container">
+
+            <!-- First row -->
+            <!-- <div class="row">
+              <div class="col-md-3">
+                <div class="card rounded" style="width: 15rem;"> -->
+
+            <div class="row">
+              <!-- Use a forEach loop to dynamically generate cards -->
+              <div class="col-md-3" id="cardContainer">
+                <!-- Cards will be dynamically generated here -->
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-3">
+                <div class="card rounded" style="width: 100%;">
+                  <div class="card-body">
+                    <h5 class="card-title" id="unresolvedTitle"></h5>
+                    <h6 class="card-subtitle mb-2 text-body-secondary" id="unresolvedNumber"></h6>
+                  </div>
+                </div>
+              </div>
+
+              <!-- <div class="col-md-3">
+                <div class="card rounded" style="width: 15rem;"> -->
+              <div class="col-md-3">
+                <div class="card rounded" style="width: 100%;">
+
+                  <div class="card-body">
+                    <h5 class="card-title" id="overdueTitle"></h5>
+                    </h5>
+                    <h6 class="card-subtitle mb-2 text-body-secondary" id="overdueNumber"></h6>
+                  </div>
+                </div>
+              </div>
+
+              <!-- <div class="col-md-3">
+                <div class="card rounded" style="width: 15rem;"> -->
+              <div class="col-md-3">
+                <div class="card rounded" style="width: 100%;">
+
+                  <div class="card-body">
+                    <h5 class="card-title" id="openTitle"></h5>
+                    <h6 class="card-subtitle mb-2 text-body-secondary" id="openNumber"></h6>
+                  </div>
+                </div>
+              </div>
+
+              <!-- <div class="col-md-3">
+                <div class="card rounded" style="width: 15rem;"> -->
+              <div class="col-md-3">
+                <div class="card rounded" style="width: 100%;">
+
+                  <div class="card-body">
+                    <h5 class="card-title" id="holdTitle"></h5>
+                    <h6 class="card-subtitle mb-2 text-body-secondary" id="holdNumber"></h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Row gap -->
+            <div class="row row-gap"></div>
+
+            <!-- Second row -->
+
+
+            <div class="d-flex mb-3 align-items-stretch">
+              <div class="main-container flex-grow-1 mr-3 rounded" style="max-width: 70%; height: auto;">
+                <!-- <div class="main-container flex-grow-1 mr-3 rounded" style="max-width: 70%;">
+                <div class="chart-container" style="height: 200px;"> -->
+                <!-- Large Container Content with image -->
+                <img src="assets/images/chart.png" class="img-fluid rounded" alt="Large Container Image"
+                  style="max-width: 100%; height: auto;">
+
+              </div>
+
+              <div class="d-flex flex-column rounded" style="width: 300px;">
+                <!-- Five Boxes -->
+                <div class="side-box rounded mb-0">
+                  <div class="subtitle-wrapper">
+                    <h5 class="card-title" id="resolvedTitle"></h5>
+                    <span class="subtitle" id="resolvedNumber"></span>
+                  </div>
+                </div>
+
+                <div class="side-box rounded mb-0">
+                  <div class="subtitle-wrapper">
+                    <h5 class="card-title" id="receivedTitle"></h5>
+                    <span class="subtitle" id="receivedNumber"></span>
+                  </div>
+                </div>
+
+                <div class="side-box rounded mb-0">
+                  <div class="subtitle-wrapper">
+                    <h5 class="card-title" id="avgFirstRespTitle"></h5>
+                    <span class="subtitle" id="avgFirstRespNumber"></span>
+                  </div>
+                </div>
+
+                <div class="side-box rounded mb-0">
+                  <div class="subtitle-wrapper">
+                    <h5 class="card-title" id="resWithSLATitle"></h5>
+                    <span class="subtitle" id="resWithSLANumber"></span>
+                  </div>
+                </div>
+
+                
+                </div>
+              </div>
+            </div>
+
+            <!-- Third row -->
+            <div class="d-flex">
+              <div class="half-container flex-fill mr-3 rounded">
+                <div class="container mt-3">
+                  <table class="table table-borderless">
+                    <thead>
+                      <tr>
+                        <th scope="col" class="text-left">Unresolved tickets
+                          <br>
+                          <small>Group: Support</small>
+                        </th>
+                        <th scope="col" class="text-right view-all-blue">View details
+                          <br>
+                          <small class="hide-text">Hide text</small>
+                        </th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td class="text-left" style="border-bottom: 1px solid #ccc;" id="waitingOnFeatReqTitle"></td>
+                        <td class="text-right" style="border-bottom: 1px solid #ccc;" id="waitingOnFeatReqNumber"></td>
+                      </tr>
+                      <tr>
+                        <td class="text-left" style="border-bottom: 1px solid #ccc;" id="awaitingCustRespTitle"></td>
+                        <td class="text-right" style="border-bottom: 1px solid #ccc;" id="awaitingCustRespNumber"></td>
+                      </tr>
+                      <tr>
+                        <td class="text-left" style="border-bottom: 1px solid #ccc;" id="awaitingDevfixTitle"></td>
+                        <td class="text-right" style="border-bottom: 1px solid #ccc;" id="awaitingDevfixNumber"></td>
+                      </tr>
+                      <tr>
+                        <td class="text-left" id="pendingTitle"></td>
+                        <td class="text-right" id="pendingNumber"></td>
+                      </tr>
+                      <!-- Add more rows as needed -->
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <div class="half-container flex-fill rounded">
+                <div class="container mt-3">
+                  <table class="table table-borderless">
+                    <tr>
+                      <th scope="col" class="text-left">Tasks
+                        <br>
+                        <small>Today</small>
+                      </th>
+                      <th scope="col" class="text-right view-all-blue">View all</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td class="text-left" style="border-bottom: 1px solid #ccc;">Create new task</td>
+                        <td class="text-right" style="border-bottom: 1px solid #ccc;"><i class="fas fa-plus"></i></td>
+                      </tr>
+                      <tr>
+                        <td class="text-left">
+                          <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="finishTicketUpdate">
+                            <label class="custom-control-label" for="finishTicketUpdate">Finish ticket update</label>
+                          </div>
+                        </td>
+                        <td class="text-right">
+                          <span class="badge badge-warning text-white">Urgent</span>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="text-left">
+                          <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="finishTicketUpdate">
+                            <label class="custom-control-label" for="finishTicketUpdate">Create new ticket
+                              example</label>
+                          </div>
+                        </td>
+                        <td class="text-right">
+                          <span class="badge badge-success text-white">NEW</span>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="text-left">
+                          <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="finishTicketUpdate">
+                            <label class="custom-control-label" for="finishTicketUpdate">Update ticket report</label>
+                          </div>
+                        </td>
+                        <td class="text-right">
+                          <span class="badge badge-secondary text-white">Default</span>
+                        </td>
+                        </td>
+                      </tr>
+                      <!-- Add more rows as needed -->
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </header>
+
+        <!-- New -->
+        <div class="row">
+
+          <!-- User profile -->
+          <!-- <div class="user-profile">
+          <div class="user-avatar">
+            <img src="assets/images/aboutmeimagekeith2.jpg" alt="User Avatar">
+          </div>
+        </div> -->
+
+          <!-- USERICON -->
+
+          <!-- <div class="col-md-2 user-profile">
+          <div class="user-avatar">
+            <img src="assets/images/aboutmeimagekeith2.jpg" alt="User Avatar">
+          </div>
+        </div> -->
+
+
+          <!-- Overview -->
+          <!-- <div class="overview">
+          <span class="text-light">Overview</span>
+        </div> -->
+
+          <!-- Overview -->
+          <div class="col-md-4 overview">
+            <span class="text-light">Overview</span>
+          </div>
+
+          <!-- User name -->
+          <!-- <div class="user-name">
+          <span class="text-light">Keith Lun</span>
+        </div> -->
+
+          <!-- User Name -->
+          <div class="col-md-6 user-name">
+            <span class="text-light">Keith Lun</span>
+          </div>
+        </div>
+
+
+      </main>
+    </div>
+  </div>
+
+  <!-- <footer class="footer bg-dark text-light text-center py-3">
+    <div class="container">
+      <span>&copy; 2024 Overview Website. All rights reserved.</span>
+    </div>
+  </footer> -->
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+
+</html>
